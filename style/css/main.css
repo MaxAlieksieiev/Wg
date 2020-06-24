@@ -3,3 +3,70 @@
 *::before {
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url("/images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 800px;
+  height: 100%;
+}
+.header__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 70px;
+}
+.header-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__title {
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 62px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 700px;
+  display: block;
+  padding-bottom: 280px;
+}
+.header__title--bold {
+  font-weight: 700;
+}
+
+.logo {
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+  background-color: #000000;
+  position: relative;
+  margin-bottom: 70px;
+}
