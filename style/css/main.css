@@ -1,49 +1,223 @@
-/*
-Error: Invalid CSS after "...argin-top: 25px": expected "{", was ";"
-        on line 85 of G:\Layout\In working\Wg\style\sccs\main.scss
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
-80: }
-81: .form{
-82:     position: relative;
-83:     &__inner{
-84: <<<<<<< HEAD
-85:         margin-top: 25px;
-86: =======
-87: >>>>>>> faa3967e37e771569195644c498e8ac5900dd0b5
-88:         max-width: 333px;
-89:         padding-top: 30px;
-90:         padding-bottom: 25px;
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+}
 
-Backtrace:
-G:\Layout\In working\Wg\style\sccs\main.scss:85
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...argin-top: 25px\": expected \"{\", was \";\"\A         on line 85 of G:\Layout\In working\Wg\style\sccs\main.scss\A \A 80: }\A 81: .form{\A 82:     position: relative;\A 83:     &__inner{\A 84: <<<<<<< HEAD\A 85:         margin-top: 25px;\A 86: =======\A 87: >>>>>>> faa3967e37e771569195644c498e8ac5900dd0b5\A 88:         max-width: 333px;\A 89:         padding-top: 30px;\A 90:         padding-bottom: 25px;"; }
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.header {
+  background-image: url("/images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 800px;
+  height: 100%;
+}
+.header__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 70px;
+}
+.header-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__title {
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 62px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 700px;
+  display: block;
+  padding-bottom: 280px;
+}
+.header__title--bold {
+  font-weight: 700;
+}
+
+.logo {
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+  background-color: #000000;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.form {
+  position: relative;
+}
+.form__inner {
+  margin-top: 25px;
+  max-width: 333px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  border-radius: 2px;
+  position: absolute;
+  top: -223px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.28);
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+}
+.form__input {
+  width: 245px;
+  padding: 13px 15px 15px 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+}
+.form__input::placeholder {
+  color: #b4adad;
+  font-size: 15px;
+}
+.form-gallery {
+  padding: 0;
+  margin-top: 23px;
+  width: inherit;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-gallery__row {
+  display: flex;
+  max-height: 43px;
+  width: inherit;
+}
+.form-gallery__item {
+  margin: 0;
+  padding: 0;
+}
+.form-gallery__image {
+  width: 100%;
+  height: 43px;
+}
+.form__title {
+  margin-top: 25px;
+  padding: 0 45px;
+  color: #938e8e;
+  font-size: 16px;
+}
+.form__button {
+  margin-top: 27px;
+  display: inline-block;
+  padding: 12px 38px 14px;
+  background-color: #227dd3;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.files__inner {
+  margin-top: 185px;
+}
+.files__list {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0;
+  margin-bottom: 108px;
+}
+.files__item {
+  display: flex;
+  flex-direction: row;
+  max-width: 406px;
+  margin-left: 10px;
+}
+.files__image {
+  margin-right: 30px;
+}
+.files__title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000;
+}
+.files__description {
+  color: #4f4e4e;
+}
+
+.content {
+  width: 100%;
+  color: #fff;
+  position: relative;
+  background-color: #5fc18b;
+}
+.content-top {
+  background-color: #5fc18b;
+  padding-top: 85px;
+  padding-bottom: 420px;
+}
+.content-top__inner {
+  max-width: 750px;
+  margin: 0 auto;
+  position: relative;
+}
+.content-top__image {
+  z-index: 1;
+}
+.content-top__main {
+  display: block;
+  max-width: 650px;
+  margin: 0 auto 60px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 155px;
+  z-index: 2;
+}
+.content-top__title {
+  text-align: center;
+}
+.content-top__text {
+  margin-bottom: 30px;
+}
+.content-bottom {
+  background-image: url("/images/all-content.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 500px;
+  z-index: 3;
+}
+.content-bottom__img {
+  width: 100%;
+}
+.content-bottom__main {
+  padding-top: 185px;
+}
