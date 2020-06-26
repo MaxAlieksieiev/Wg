@@ -170,6 +170,51 @@ ul{
         
     }
 }
+.content{
+    background-color: #5fc18b;
+    color: #fff;
+    padding: 85px 0 145px;
+    position: relative;
+    &-top__inner{
+        max-width: 750px;
+        margin: 0 auto;
+        position: relative;
+    }
+    &-top__image{
+        z-index: 1;
+        // margin-bottom: 20px;
+    }
+    &-top__main{
+        max-width: 600px;
+        padding: 0 15px;
+        margin: 0 auto;
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        top: 160px;
+    }
+    &-top__title{
+        text-align: center;
+    }
+    &__line{
+        background-image: url("/images/background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 336px;
+        width: 100%;
+        z-index: 3;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 460px;
+    }
+    &-bottom{
+        margin-top: 353px;
+        background-color: #44a36f;
+    }
+}
 // .content{
 //     width: 100%;
 //     color: #fff;
