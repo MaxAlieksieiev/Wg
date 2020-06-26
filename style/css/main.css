@@ -283,3 +283,12 @@ ul {
 .contact__name::placeholder, .contact__email::placeholder, .contact__message::placeholder {
   color: #4c505d;
 }
+
+.footer {
+  background-color: #43a06d;
+}
+.footer__text {
+  text-align: center;
+  color: #fff;
+  padding: 20px 0 17px;
+}
