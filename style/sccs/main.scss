@@ -215,17 +215,21 @@ ul{
         z-index: 3;
     }
     &-bottom__main{
-        max-width: 860px;
-        margin: 350px auto 130px;
+        max-width: 1000px;
+        margin: 350px auto 0;
         padding: 10px;
         display: flex;
+        justify-content: space-between;
     }
+
     &-bottom__left-side{
         margin-right: 60px;
-        
     }
     &-bottom__right-side{
         margin-bottom: 80px;
+    }
+    &-bottom__title{
+        margin-top: 0;
     }
     &-bottom__desc{
         margin-bottom: 60px;
@@ -240,6 +244,49 @@ ul{
     }
    
 }
+.contact{
+    background-image: url("/images/map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 503px;
+    position: relative;
+    &__inner{
+        width: 430px;
+        height: 430px;
+        border-radius: 50%;
+        background-color: rgba(255,255,255, .8);
+        position: absolute;
+        top: 135px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    &-form{
+        padding: 113px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__name,
+    &__email,
+    &__message{
+        width: 275px;
+        margin-bottom: 13px;
+        border: 1px solid #d8d8d8;
+        padding: 12px 17px 11px;
+    }
+    &__message{
+        resize: none;
+        height: 80px;
+    }
+    &__name::placeholder,
+    &__email::placeholder,
+    &__message::placeholder{
+        color: #4c505d;
+    }
 
+}
   
   
