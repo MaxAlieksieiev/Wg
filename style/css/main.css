@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 14px;
+}
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 23px;
 }
 
@@ -31,7 +35,7 @@ h2 {
 }
 
 .title {
-  font-size: 40px;
+  font-size: calc(40/14 * 1em);
   font-weight: 600;
 }
 
@@ -57,7 +61,7 @@ h2 {
 }
 .header__title {
   color: #ffffff;
-  font-size: 50px;
+  font-size: calc(50/14 * 1em);
   line-height: 62px;
   text-transform: uppercase;
   font-weight: 400;
@@ -108,7 +112,7 @@ h2 {
 }
 .form__input::placeholder {
   color: #b4adad;
-  font-size: 15px;
+  font-size: calc(15/14 * 1em);
 }
 .form-gallery {
   padding: 0;
@@ -134,7 +138,7 @@ h2 {
   margin-top: 25px;
   padding: 0 45px;
   color: #938e8e;
-  font-size: 16px;
+  font-size: calc(16/14 * 1em);
 }
 .form__button {
   margin-top: 27px;
@@ -143,7 +147,7 @@ h2 {
   background-color: #227dd3;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 26px;
+  font-size: calc(26/14 * 1em);
   font-weight: 600;
 }
 
@@ -167,7 +171,7 @@ h2 {
   float: left;
 }
 .files__title {
-  font-size: 28px;
+  font-size: calc(28/14 * 1em);
   font-weight: 600;
   color: #000;
 }
@@ -236,7 +240,7 @@ h2 {
 .content-bottom__btn {
   font-weight: 600;
   color: #fff;
-  font-size: 28px;
+  font-size: calc(28 /14 * 1em);
   border: 3px solid #fff;
   padding: 17px 36px 21px;
   display: inline-block;

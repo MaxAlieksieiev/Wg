@@ -47,9 +47,15 @@
         &-top__main{
             top: 75px;
         }
+        &-top__text{
+            text-align: justify;
+        }
+        &-bottom{
+            margin-top: 152px;
+        }
         &-bottom__main{
             flex-direction: column;
-            padding-bottom: 300px;
+            padding-bottom: 0;
         }
         &-bottom__computer{
             height: auto;
@@ -58,9 +64,34 @@
         &-bottom__btn{
             margin-bottom: 200px;
         }
+        &-bottom__desc{
+            text-align: justify;
+        }
+        &__line{
+            top: 630px;
+        }
         
     }
     .title{
         font-size: 25px;
+        text-align: center;
+    }
+    .contact{
+        &__inner{
+            width: 300px;
+            height: 300px;
+        }
+        &-form{
+            padding-top: 36px;
+        }
+        &__name,
+        &__email,
+        &__message{
+            width: 175px;
+        }
+        &__image{
+            width: 55px;
+            height: 55px;
+        }
     }
 }

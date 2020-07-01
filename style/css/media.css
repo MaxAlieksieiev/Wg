@@ -36,16 +36,36 @@
     width: 100%; }
   .content-top__main {
     top: 75px; }
+  .content-top__text {
+    text-align: justify; }
+  .content-bottom {
+    margin-top: 152px; }
   .content-bottom__main {
     flex-direction: column;
-    padding-bottom: 300px; }
+    padding-bottom: 0; }
   .content-bottom__computer {
     height: auto;
     width: 100%; }
   .content-bottom__btn {
     margin-bottom: 200px; }
+  .content-bottom__desc {
+    text-align: justify; }
+  .content__line {
+    top: 630px; }
 
   .title {
-    font-size: 25px; } }
+    font-size: 25px;
+    text-align: center; }
+
+  .contact__inner {
+    width: 300px;
+    height: 300px; }
+  .contact-form {
+    padding-top: 36px; }
+  .contact__name, .contact__email, .contact__message {
+    width: 175px; }
+  .contact__image {
+    width: 55px;
+    height: 55px; } }
 
 /*# sourceMappingURL=media.css.map */
